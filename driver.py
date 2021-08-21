@@ -3,7 +3,6 @@ from pyke import knowledge_engine, krb_traceback
 
 engine = knowledge_engine.engine(__file__)
 
-1
 def run():
     engine.reset()
     try:
@@ -12,6 +11,5 @@ def run():
     except Exception:
         krb_traceback.print_exc()
         sys.exit(1)
-
 
 run()

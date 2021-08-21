@@ -1,6 +1,5 @@
 # pattern_matching.krb 
 
-
 knows_genre
     use knows_genre()
     when
@@ -13,16 +12,36 @@ fantasy
     when
         python engine.get_ke('questions','fantasy')
         questions.fantasy($ans)
-        pick_fantasy_1($ans)
 
 scifi
     use post_pick_genre(2)
     when
         python engine.get_ke('questions','scifi')
         questions.scifi($ans)
+        post_scifi($ans)
 
-fantasy_no
-    use pick_fantasy_1(2)
+scifi_yes
+    use post_scifi(1)
     when
-        python engine.get_ke('questions','fantasy_no')
-        pick_fantasy_1_1($ans)
+        python engine.get_ke('questions', 'scifi_1')
+        questions.scifi_1($ans)
+
+scifi_no
+    use post_scifi(2)
+    when
+        python engine.get_ke('questions', 'scifi_2')
+        questions.scifi_2($ans)
+        post_scifi_2($ans)
+
+scifi_no_yes
+    use post_scifi_2(1)
+    when
+        python engine.get_ke('questions', 'scifi_2_1')
+        questions.scifi_2_1($ans)
+
+
+scifi_no_no
+    use post_scifi_2(2)
+    when
+        python engine.get_ke('questions', 'scifi_2_2')
+        questions.scifi_2_2($ans)

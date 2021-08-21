@@ -9,33 +9,63 @@ genre_master($ans)
         2: Science Fiction
             ! Also good!
 
-fantasy($ans)
-    Are you going to be upset when you don't find Harry Potter?
-    ---
-    $ans = select_1
-        1. Yes!  Give me more precocious lads at schools of magic, please.
-            ! The Kingkiller Chronicles - Patrick Rothfuss
-        2. No.  I know where to find him if I need him.
-            ! You got it.
-
 scifi($ans)
     Can I interest you in some Cyberpunk?
     ---
     $ans = select_1
         1: Yes!  I love that Billy Idol album.
             ! You got it!
-        2: Maybe.  Can I get the geek without the bleak?
-            ! On it!
-        3: No.  I get enough "cyber punks" on Facebook.
+        2: No.  I get enough "cyber punks" on Facebook.
             ! I hear that
 
-fantasy_no($ans)
+fantasy($ans)
     Are you new to the fantasy genre?
     ---
     $ans = select_1
         1: Yes.  I am as yet unfamiliar with your tropes.  Do your worst.
             ! The Lord of the Rings - J.R.R. Tolkien
-        2. Maybe.  Does the Wizard of Oz count?
+        2: Maybe.  Does the Wizard of Oz count?
             ! Wicked - Gregory Maguire
-        3. No.  I'm what you call experienced
+        3: No.  I'm what you call experienced
             ! American Gods - Neil Gaiman
+
+scifi_1($ans)
+    Gritty Noir, Neo-Victorian or Samurai?
+    ---
+    $ans = select_1
+        1: Noir
+            ! Neuromancer - William Gibson
+        2: Neo-Victorian.  Funny hats please.
+            ! The Diamond Age - Neal Stephenson
+        3: Samurai
+            ! Snow Crash - Neal Stephenson
+
+scifi_2($ans)
+    Ready to blast into space?
+    ---
+    $ans = select_1
+        1: Yes.  The stars are my destination.
+            ! Let's see...
+        2: No.  I like to keep my feet on the ground.
+            ! Ok, let's see.
+
+scifi_2_2($ans)
+    Don't you mean under the ground?
+    ---
+    $ans = select_1
+        1: Yes, give me some subterranean action
+            ! Journey to the Center of the Earth - Jules Verne
+        2: No.  I said "on" smart guy.
+            ! The Time Machine - HG Wells
+
+scifi_2_1($ans)
+    Are you a war buff?
+    ---
+    $ans = select_1
+        1: Yes.  I watch the military channel exclusively.
+            ! Ender's Game - Orson Scott Card
+        2: Maybe.  But what I'm really after is exploring the galaxy.
+            ! The Hitchhiker's Guide to the Galaxy - Douglas Adams
+        3: No.  But I'm interested in first contact
+            ! Rendezvous with Rama - Arthur C Clarke
+
