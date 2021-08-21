@@ -1,0 +1,41 @@
+# questions.kqb
+
+genre_master($ans)
+    Which genre are you interested in today?
+    ---
+    $ans = select_1
+        1: Fantasy
+            ! Great!
+        2: Science Fiction
+            ! Also good!
+
+fantasy($ans)
+    Are you going to be upset when you don't find Harry Potter?
+    ---
+    $ans = select_1
+        1. Yes!  Give me more precocious lads at schools of magic, please.
+            ! The Kingkiller Chronicles - Patrick Rothfuss
+        2. No.  I know where to find him if I need him.
+            ! You got it.
+
+scifi($ans)
+    Can I interest you in some Cyberpunk?
+    ---
+    $ans = select_1
+        1: Yes!  I love that Billy Idol album.
+            ! You got it!
+        2: Maybe.  Can I get the geek without the bleak?
+            ! On it!
+        3: No.  I get enough "cyber punks" on Facebook.
+            ! I hear that
+
+fantasy_no($ans)
+    Are you new to the fantasy genre?
+    ---
+    $ans = select_1
+        1: Yes.  I am as yet unfamiliar with your tropes.  Do your worst.
+            ! The Lord of the Rings - J.R.R. Tolkien
+        2. Maybe.  Does the Wizard of Oz count?
+            ! Wicked - Gregory Maguire
+        3. No.  I'm what you call experienced
+            ! American Gods - Neil Gaiman
